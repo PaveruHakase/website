@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Conthrax;
+    src: url('fonts/conthrax-sb.ttf');
+}
+
+
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+    font-family: Conthrax;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome, Edge, Opera and Firefox */
+
+    height: 100%;
+    
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+
+    /* background-image: url("files/pexels-donald-tong-55787.jpg"); */
+
+    background-image: url("files/Dzkhlr9UwAA1Zuo.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    
+}
+
+#taskbar{
+    position: sticky;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient( #87a1f8, #0029b1);;
+    border-bottom: 2px solid #00218d;
+    /* border-bottom: 5px solid rgba(0, 0, 0, 0.325); */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 40;
+
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#taskbar #left-taskbar{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#taskbar #left-taskbar div{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+#taskbar #left-taskbar img{
+    height: 30px;
+    width: 24px;
+}
+
+#taskbar #right-taskbar{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#taskbar #right-taskbar div{
+    margin: 5px 10px 5px 10px;
+}
+
+#icons-container{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.icon{
+    margin: 10px;
+    width: 76px;
+    height: 80px;
+    /* background-color: #9F9F9F; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    /* word-break: break-word; */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+
+.icon img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.icon span{
+    margin-top: 5px;
+    font-size: 12px;
+    display: inline-block;
+    word-wrap: break-word;
+    text-align: center;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.icon:hover{
+    background-color: #e2e2e2;
+    background-color: rgba(0, 0, 0, 0.325);
+    border: solid 2px #d3d3d3;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: white;
+}
+
+.tab{
+    width: 500px;
+    height: 500px;
+    background-color: #FBF8F8;
+    border: 3px solid  rgba(120, 120, 120);
+    border: 3px solid  rgba(0, 0, 0, 0.325);
+    border-radius: 7px;
+    align-items: center;
+
+    position: absolute;
+    /* top: 15%;
+    left: 20%; */
+    z-index: 55;
+    /* display: none; */
+
+    display: none;
+
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.tab-taskbar{
+    width: calc(100% + 1.1px);
+    height: 40px;
+    background-image: linear-gradient( #deecff, #89BBFE);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px 4px 0px 0px;
+    position: relative;
+    top: -0.5px;
+    left: -0.5px;
+    color: white;
+    white-space: nowrap;
+}
+
+.tab-taskbar div{
+    margin: 10px;
+}
+
+.tab-bar{
+    height: 7px;
+    width: 100%;
+    background-image: linear-gradient(#E5E5E5, #9F9F9F);
+    border-radius: 5000px;
+}
+
+.tab-button{
+    height: 25px;
+    min-width: 25px;
+    background-color: #9F9F9F;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.tab-button:hover{
+    background-color: red;
+}
+
+/* .tab-title{
+    
+} */
+
+.tab-active{
+    display: block;
+}
+
+
+.tab-content{
+    margin: 5px;
+}

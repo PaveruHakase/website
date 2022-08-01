@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="taskbar">
+        <div id="left-taskbar">
+            <!-- <div id="logo">
+                <img src="files/Apple_logo_black.svg.png" alt="">
+            </div> -->
+            <div id="about">
+                <span>About</span>
+            </div>
+            <div id="credits">
+                <span>Credits</span>
+            </div>
+        </div>
+
+        <div id="right-taskbar">
+            <div id="date">
+                <span id="date-value">22 Jul 2022</span>
+            </div>
+
+            <div id="time">
+                <span id="time-value"> 13:08</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="icons-container">
+        <div class="icon" id="portfolio-icon" target="portfolio-folder">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/folder.ico" alt="">
+            <span>Portfolio</span>
+        </div>
+
+        <div class="icon" id="about-me-icon" target="about-me-window">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/shell32_152.ico" alt="">
+            <span>About</span>
+        </div>
+
+        <div class="icon" id="contact-me-icon" target="contact-me-window">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/dpmodemx_701.ico" alt="">
+            <span>Contact</span>
+        </div>
+
+        <div class="icon" id="CV-icon" target="CV-window">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/mailnews_20.ico" alt="">
+            <span>CV</span>
+        </div>
+
+        <!-- <div class="icon" id="links-icon" target="links-window">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/isign32_ico_app.ico" alt="">
+            <span>Links</span>
+        </div> -->
+
+        <div class="icon" id="youtube-icon" target="external-youtube">
+            <img src="files/11YouTube_logo_2005-removebg-preview.png" alt="">
+            <span>YouTube</span>
+        </div>
+
+        <div class="icon" id="links-icon" target="external-soundcloud">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/isign32_ico_app.ico" alt="">
+            <span>SoundCloud</span>
+        </div>
+
+        <div class="icon" id="links-icon" target="external-vimeo">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/isign32_ico_app.ico" alt="">
+            <span>Vimeo</span>
+        </div>
+
+        <div class="icon" id="discord-icon" target="external-discord">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/isign32_ico_app.ico" alt="">
+            <span>Discord</span>
+        </div>
+
+        <div class="icon" id="instagram-icon" target="external-instagram">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/isign32_ico_app.ico" alt="">
+            <span>Instagram</span>
+        </div>
+
+        <div class="icon" id="facebook-icon" target="external-facebook">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/isign32_ico_app.ico" alt="">
+            <span>Facebook</span>
+        </div>
+
+        <div class="icon" id="twitch-icon" target="external-twitch">
+            <img src="https://raw.githubusercontent.com/React95/React95/master/packages/icons/src/icons/isign32_ico_app.ico" alt="">
+            <span>Twitch</span>
+        </div>
+
+    </div>
+
+    <div class="tab" id="portfolio-folder">
+        <div class="tab-taskbar draggable" id="portfolio-folder-taskbar">
+            
+
+            <div class="tab-title">
+                <span>Portfolio</span>
+            </div>
+
+            <div class="tab-bar" id="right-bar"></div>
+            <div class="tab-button"></div>
+        </div>
+        <div class="tab-content"></div>
+    </div>
+
+    <div class="tab" id="about-me-window">
+        <div class="tab-taskbar draggable" id="about-me-window-taskbar">
+            <div class="tab-title">
+                <span>About</span>
+            </div>
+
+            <div class="tab-bar" id="right-bar"></div>
+            <div class="tab-button"></div>
+        </div>
+        <div class="tab-content" >
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+        </div>
+    </div>
+
+    <div class="tab" id="contact-me-window">
+        <div class="tab-taskbar draggable" id="contact-me-window-taskbar">
+            <div class="tab-title">
+                <span>Contact</span>
+            </div>
+
+            <div class="tab-bar" id="right-bar"></div>
+            <div class="tab-button"></div>
+        </div>
+        <div class="tab-content">
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+        </div>
+    </div>
+
+    <div class="tab" id="CV-window">
+        <div class="tab-taskbar draggable" id="CV-window-taskbar">
+            <div class="tab-title">
+                <span>CV</span>
+            </div>
+
+            <div class="tab-bar" id="right-bar"></div>
+            <div class="tab-button"></div>
+        </div>
+        <div class="tab-content" >
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+        </div>
+    </div>
+
+
+    <div class="tab" id="links-window">
+        <div class="tab-taskbar draggable" id="links-window-taskbar">
+            <div class="tab-title">
+                <span>Links</span>
+            </div>
+
+            <div class="tab-bar" id="right-bar"></div>
+            <div class="tab-button"></div>
+        </div>
+        <div class="tab-content" >
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+        </div>
+    </div>
+
+
+    <canvas id="canvas"></canvas>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

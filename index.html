@@ -8,32 +8,55 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
+                
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="taskbar">
-        <div id="left-taskbar">
-            <!-- <div id="logo">
-                <img src="files/Apple_logo_black.svg.png" alt="">
-            </div> -->
-            <div id="about">
-                <span>About</span>
+        <div id="main-taskbar">
+            <div id="left-taskbar">
+                <div id="logo">
+                    <img src="files/Apple_logo_black.svg.png" alt="">
+                </div>
+                <div id="logo-shadow">
+                    <img src="files/Apple_logo_black.svg.png" alt="">
+                </div>
+
+                <!-- <div id="about">
+                    <span>About</span>
+                </div>
+                <div id="credits">
+                    <span>Credits</span>
+                </div> -->
+
+                
+
             </div>
-            <div id="credits">
-                <span>Credits</span>
+
+            <div id="right-taskbar">
+                <div id="date">
+                <i> <span id="date-valuee">22 Jul 2022</span></i>
+                </div>
+
+                <div id="time">
+                <i>  <span id="time-valuee">13:08</span> </i>
+                </div>
             </div>
         </div>
 
-        <div id="right-taskbar">
+        <div id="right-taskbar-shadow">
             <div id="date">
-                <span id="date-value">22 Jul 2022</span>
-            </div>
+                <i> <span id="date-value">22 Jul 2022</span></i>
+                </div>
 
-            <div id="time">
-                <span id="time-value"> 13:08</span>
-            </div>
+                <div id="time">
+                <i>  <span id="time-value">13:08</span> </i>
+                </div>
+
         </div>
+
     </div>
 
     <div id="icons-container">
@@ -102,15 +125,24 @@
     <div class="tab" id="portfolio-folder">
         <div class="tab-taskbar draggable" id="portfolio-folder-taskbar">
             
-
             <div class="tab-title">
                 <span>Portfolio</span>
             </div>
-
-            <div class="tab-bar" id="right-bar"></div>
-            <div class="tab-button"></div>
+           
+            <div class="tab-button"><span>x</span></div>
         </div>
-        <div class="tab-content"></div>
+        <div class="tab-content" >
+            <!-- <div class="tab-content-shadow"></div> -->
+            <div class="text-content">
+                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+            </div>
+        </div>
+
+        <div class="tab-footer">
+            <div class="directory">
+                <span>.../directory/bruh</span>
+            </div>
+        </div>
     </div>
 
     <div class="tab" id="about-me-window">
@@ -118,26 +150,42 @@
             <div class="tab-title">
                 <span>About</span>
             </div>
-
-            <div class="tab-bar" id="right-bar"></div>
-            <div class="tab-button"></div>
+           
+            <div class="tab-button"><span>x</span></div>
         </div>
         <div class="tab-content" >
-            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+            <!-- <div class="tab-content-shadow"></div> -->
+            <div class="text-content">
+                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+            </div>
+        </div>
+
+        <div class="tab-footer">
+            <div class="directory">
+                <span>.../directory/bruh</span>
+            </div>
         </div>
     </div>
 
     <div class="tab" id="contact-me-window">
         <div class="tab-taskbar draggable" id="contact-me-window-taskbar">
             <div class="tab-title">
-                <span>Contact</span>
+                <span>Contact me</span>
             </div>
-
-            <div class="tab-bar" id="right-bar"></div>
-            <div class="tab-button"></div>
+           
+            <div class="tab-button"><span>x</span></div>
         </div>
-        <div class="tab-content">
-            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+        <div class="tab-content" >
+            <!-- <div class="tab-content-shadow"></div> -->
+            <div class="text-content">
+                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTISLOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+            </div>
+        </div>
+
+        <div class="tab-footer">
+            <div class="directory">
+                <span>.../directory/bruh</span>
+            </div>
         </div>
     </div>
 
@@ -146,29 +194,37 @@
             <div class="tab-title">
                 <span>CV</span>
             </div>
-
-            <div class="tab-bar" id="right-bar"></div>
-            <div class="tab-button"></div>
+           
+            <div class="tab-button"><span>x</span></div>
         </div>
         <div class="tab-content" >
-            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
+            <!-- <div class="tab-content-shadow"></div> -->
+            <div class="text-content">
+                
+            </div>
+        </div>
+
+        <div class="tab-footer">
+            <div class="directory">
+                <span>.../directory/bruh</span>
+            </div>
         </div>
     </div>
 
 
-    <div class="tab" id="links-window">
+    <!-- <div class="tab tab-active" id="links-window">
         <div class="tab-taskbar draggable" id="links-window-taskbar">
             <div class="tab-title">
                 <span>Links</span>
             </div>
 
-            <div class="tab-bar" id="right-bar"></div>
-            <div class="tab-button"></div>
+            
+            <div class="tab-button"><span>x</span></div>
         </div>
         <div class="tab-content" >
             LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. AENEAN EU TRISTIQUE NEQUE. FUSCE SIT AMET LOBORTIS
         </div>
-    </div>
+    </div> -->
 
 
     <canvas id="canvas"></canvas>

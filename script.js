@@ -124,7 +124,7 @@ document.addEventListener('mousemove', function(event) {
 
 // var context;
 // var radius = 5;
-// var numPoints = 40;
+// var numPoints = 400;
 // var points = [];
 // var width;
 // var height;
@@ -159,7 +159,7 @@ document.addEventListener('mousemove', function(event) {
 //     points.push(new Point());
 //   }
 
-//   setInterval(draw, 20);
+//   setInterval(draw, 15);
 // }
 
 // function drawTriangs() {
@@ -213,9 +213,8 @@ document.addEventListener('mousemove', function(event) {
 // window.addEventListener('resize', resizeCanvas, false);
 
 function updateClock() {
-    var now = new Date(), // current date
-        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'October', 'November', 'December']; // you get the idea
-        
+    var now = new Date() // current date
+       
         if (now.getMinutes() < 10) {
             var minutes = '0' + now.getMinutes();
         } else {
@@ -225,13 +224,25 @@ function updateClock() {
         time = now.getHours() + ':' + minutes, // again, you get the idea
 
         // a cleaner way than string concatenation
-        date = [now.getDate(), 
-                months[now.getMonth()],
-                now.getFullYear()].join(' ');
+
+        day = now.getDate()
+        if (day < 10) {
+            day = '0' + day
+        }
+        month = now.getMonth()
+        if (month < 10) {
+            month = '0' + month
+        }
+
+        date = [day, 
+                month,
+                now.getFullYear()].join('/');
 
     // set the content of the element with the ID time to the formatted string
     document.getElementById('date-value').innerHTML = date
     document.getElementById('time-value').innerHTML = time
+    document.getElementById('date-valuee').innerHTML = date
+    document.getElementById('time-valuee').innerHTML = time
 
     // call this function again in 1000ms
     setTimeout(updateClock, 1000);

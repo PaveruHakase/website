@@ -3,6 +3,10 @@
     src: url('fonts/conthrax-sb.ttf');
 }
 
+@font-face {
+    font-family: Vipnagorgialla;
+    src: url('fonts/vipnagorgialla rg.otf');
+}
 
 body{
     margin: 0;
@@ -19,35 +23,70 @@ body{
                         supported by Chrome, Edge, Opera and Firefox */
 
     height: 100%;
-    
+    background-image: url("files/EedklxAU4AIXEd-.jpeg");
+    background-size: cover;
 }
 
-canvas{
+/* width */
+::-webkit-scrollbar {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-
-    /* background-image: url("files/pexels-donald-tong-55787.jpg"); */
-
-    background-image: url("files/Dzkhlr9UwAA1Zuo.jpg");
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-    
+    z-index: 1000;
+    width: 10px;
 }
+
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 1);
+}
+   
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(80, 80, 80), rgb(60, 60, 60));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(rgb(100, 100, 100), rgb(80, 80, 80));
+}
+
+
+
+
+
 
 #taskbar{
     position: sticky;
     width: 100%;
     height: auto;
-    background-image: linear-gradient( #87a1f8, #0029b1);;
-    border-bottom: 2px solid #00218d;
     /* border-bottom: 5px solid rgba(0, 0, 0, 0.325); */
-    color: white;
+    z-index: 40;
+    background-image: linear-gradient( #b3bdd3, #dae1ea, #bfc8da);
+    border-bottom: 2px solid #00218d;
+}
+
+
+#taskbar #right-taskbar-shadow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #767676;
+    display: flex;
+    z-index: 0;
+    padding-left: 11px;
+    clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+    color: rgba(0, 0, 0, 0);
+}
+
+#taskbar #right-taskbar-shadow div{
+    margin: 5px 10px 5px 10px;
+}
+
+#main-taskbar{
+    position: sticky;
+    width: 100%;
+    height: auto;
+    /* border-bottom: 5px solid rgba(0, 0, 0, 0.325); */
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,35 +95,61 @@ canvas{
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-#taskbar #left-taskbar{
+#main-taskbar #left-taskbar{
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
-#taskbar #left-taskbar div{
-    height: auto;
+#main-taskbar #left-taskbar div{
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 5px 10px 5px 10px;
+    
     cursor: pointer;
+    
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+    z-index: 10;
+    background-color: green;
+    padding-right: 10px;
 }
 
-#taskbar #left-taskbar img{
-    height: 30px;
+#main-taskbar #left-taskbar img{
+    height: 10px;
     width: 24px;
+    margin: 5px 10px 5px 10px;
 }
 
-#taskbar #right-taskbar{
+#main-taskbar #left-taskbar #logo{
+    background-image: linear-gradient(#fff, #95b7c9);
+}
+
+#main-taskbar #left-taskbar #logo-shadow{
+    background-color: #767676;
+    position: absolute;
+    padding-right: 11px;
+    z-index: 0;
+}
+
+#main-taskbar #right-taskbar{
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-image: linear-gradient(#fff, #95b7c9);
+    padding-left: 10px;
+    clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+    
 }
 
-#taskbar #right-taskbar div{
+/* #main-taskbar #right-taskbar #date, #main-taskbar #right-taskbar #time{
+    transform: skewX(20deg);
+} */
+
+#main-taskbar #right-taskbar div{
     margin: 5px 10px 5px 10px;
 }
 
@@ -113,6 +178,7 @@ canvas{
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+    
 }
 
 
@@ -123,8 +189,9 @@ canvas{
 
 
 .icon span{
+    font-family: 'Bahnschrift', sans-serif;
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 18px;
     display: inline-block;
     word-wrap: break-word;
     text-align: center;
@@ -146,9 +213,9 @@ canvas{
 }
 
 .tab{
-    width: 500px;
-    height: 500px;
-    background-color: #FBF8F8;
+    width: 654px;
+    height: 495px;
+    background-image: linear-gradient(#eeedee, #9ca0b8);
     border: 3px solid  rgba(120, 120, 120);
     border: 3px solid  rgba(0, 0, 0, 0.325);
     border-radius: 7px;
@@ -159,6 +226,8 @@ canvas{
     left: 20%; */
     z-index: 55;
     /* display: none; */
+    display: flex;
+    flex-direction: column;
 
     display: none;
 
@@ -168,22 +237,24 @@ canvas{
 
 .tab-taskbar{
     width: calc(100% + 1.1px);
-    height: 40px;
-    background-image: linear-gradient( #deecff, #89BBFE);
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-radius: 4px 4px 0px 0px;
     position: relative;
     top: -0.5px;
     left: -0.5px;
-    color: white;
+    color: black;
+    font-size: 13px;
     white-space: nowrap;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    font-family: Vipnagorgialla;
+    font-weight: 600;
 }
 
 .tab-taskbar div{
-    margin: 10px;
+    margin: 3px 10px 3px 10px;
 }
 
 .tab-bar{
@@ -194,12 +265,20 @@ canvas{
 }
 
 .tab-button{
-    height: 25px;
-    min-width: 25px;
+    height: 10px;
+    width: 20px;
     background-color: #9F9F9F;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    outline: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.tab-button span{
+    position: relative;
+    top: -0.5px;
 }
 
 .tab-button:hover{
@@ -211,10 +290,73 @@ canvas{
 } */
 
 .tab-active{
-    display: block;
+    display: flex;
 }
 
 
 .tab-content{
-    margin: 5px;
+    height: 430px;
+    margin: 10px 10px 0 10px;
+}
+
+.tab-content .text-content{
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    overflow: auto;
+    height: 97.5%;
+    width: 624px;
+    overflow-y: auto;
+    outline: solid 3px black;
+    padding: 5px;
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 18px;                                           
+}
+
+.tab-content-shadow{
+    position: absolute;
+    background-color: black;
+    height: 460.6px;
+    min-width: 490px;
+    max-width: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.tab-footer{
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; */
+    
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    border-top: solid 2px rgb(0, 0, 0);
+    padding-top: 2px;
+}
+
+.tab-footer .directory{
+    grid-column-start: 2;
+    margin-right: 10px;
+    background-image: linear-gradient(#4a4947, #000);
+    color: white;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
 }

@@ -7,7 +7,7 @@ reach me at www.rayanmansur.com -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaveruHakase</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@ reach me at www.rayanmansur.com -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div id="desktop-screen">
     <div id="taskbar">
         <div id="main-taskbar">
             <div id="left-taskbar">
@@ -332,7 +332,7 @@ reach me at www.rayanmansur.com -->
                     </div>
                     
                     <button type="submit">Send Message</button>
-                  </form>
+                </form>
             </div>
             <div id="chatroom-info">
                 <h2>People Here</h2>
@@ -373,5 +373,30 @@ reach me at www.rayanmansur.com -->
     <canvas id="canvas"></canvas>
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script src="script.js"></script>
+</div>
+
+<div id="small-screen">
+    <h1>Your Screen Is Too small To View This Content</h1>
+    <h2>Please use a larger screen</h2>
+    <br>
+    <p>PaveruHakase is an art director.</p>
+    <p>Contact Him Below</p>
+
+    <form name="contact" method="POST" data-netlify="true">
+        <div>
+          <label>Your Name:</label><input type="text" name="name" />
+        </div>
+        <div>
+          <label>Your Email:</label><input type="email" name="email" />
+        </div>
+        <div>
+          <label>Message:</label><textarea id="textarea" name="message"></textarea>
+        </div>
+        
+        <div><button type="submit">Send Message</button></div>
+      </form>
+</div>
+
+
 </body>
 </html>

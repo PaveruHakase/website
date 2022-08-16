@@ -1,3 +1,6 @@
+/* code written by rayan mansur
+reach me at www.rayanmansur.com  */
+
 @font-face {
     font-family: Conthrax;
     src: url('fonts/conthrax-sb.ttf');
@@ -6,6 +9,43 @@
 @font-face {
     font-family: Vipnagorgialla;
     src: url('fonts/vipnagorgialla rg.otf');
+}
+
+/* div[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    background-color: black;
+} */
+
+h1, h2, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h1{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 15px;
+}
+
+p{
+    font-size: 14px;
+    font-family: Conthrax;
+}
+
+button{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 3px;
+    border: solid 2px black;
+    font-family: Conthrax;
 }
 
 body{
@@ -95,34 +135,73 @@ body{
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-#main-taskbar #left-taskbar{
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+#credits:hover{
+    color: #767676;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,0.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s linear infinite;
 }
 
-#main-taskbar #left-taskbar div{
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}
+
+
+
+#main-taskbar #left-taskbar{
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     
-    cursor: pointer;
     
-    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+    
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
     z-index: 10;
-    background-color: green;
-    padding-right: 10px;
+    background-image: linear-gradient(#fff, #95b7c9);
+    padding-right: 12px;
 }
 
-#main-taskbar #left-taskbar img{
-    height: 10px;
-    width: 24px;
+
+#taskbar #left-taskbar-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #767676;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    z-index: 0;
+    padding-right: 13px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    color: rgba(0, 0, 0, 0);
+}
+
+#taskbar #left-taskbar-shadow div{
+    color: black;
+}
+
+#main-taskbar #left-taskbar div, #taskbar #left-taskbar-shadow div{
+    height: 100%;
     margin: 5px 10px 5px 10px;
 }
 
+#main-taskbar #left-taskbar div{
+    cursor: pointer;
+    /* padding: 4px;
+    margin-top: 1px;
+    margin-bottom: 1px; */
+}
+
+
+#main-taskbar #left-taskbar div img, #taskbar #left-taskbar-shadow div img{
+    height: 10px;
+    width: 24px;
+}
+/* 
 #main-taskbar #left-taskbar #logo{
     background-image: linear-gradient(#fff, #95b7c9);
 }
@@ -132,7 +211,7 @@ body{
     position: absolute;
     padding-right: 11px;
     z-index: 0;
-}
+} */
 
 #main-taskbar #right-taskbar{
     height: auto;
@@ -154,7 +233,7 @@ body{
 }
 
 #icons-container{
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -164,8 +243,8 @@ body{
 
 .icon{
     margin: 10px;
-    width: 76px;
-    height: 80px;
+    width: 100px;
+    height: 90px;
     /* background-color: #9F9F9F; */
     display: flex;
     flex-direction: column;
@@ -183,8 +262,8 @@ body{
 
 
 .icon img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -205,16 +284,16 @@ body{
 .icon:hover{
     background-color: #e2e2e2;
     background-color: rgba(0, 0, 0, 0.325);
-    border: solid 2px #d3d3d3;
-    box-sizing: border-box;
+    outline: solid 3px #d3d3d3;
+    /* box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box; */
     color: white;
 }
 
 .tab{
     width: 654px;
-    height: 495px;
+    height: 500px;
     background-image: linear-gradient(#eeedee, #9ca0b8);
     border: 3px solid  rgba(120, 120, 120);
     border: 3px solid  rgba(0, 0, 0, 0.325);
@@ -249,7 +328,7 @@ body{
     font-size: 13px;
     white-space: nowrap;
     border-bottom: solid 2px rgb(0, 0, 0);
-    font-family: Vipnagorgialla;
+    font-family: Vipnagorgialla, sans-serif;
     font-weight: 600;
 }
 
@@ -267,7 +346,7 @@ body{
 .tab-button{
     height: 10px;
     width: 20px;
-    background-color: #9F9F9F;
+    background-color: #d5d5d5;
     border-radius: 3px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
     outline: solid 1px black;
@@ -282,21 +361,19 @@ body{
 }
 
 .tab-button:hover{
-    background-color: red;
+    background-color: rgb(159, 159, 159);
 }
 
 /* .tab-title{
     
 } */
 
-.tab-active{
-    display: flex;
-}
+
 
 
 .tab-content{
     height: 430px;
-    margin: 10px 10px 0 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 .tab-content .text-content{
@@ -304,13 +381,276 @@ body{
     border-radius: 5px;
     display: block;
     overflow: auto;
-    height: 97.5%;
+    height: 100%;
     width: 624px;
     overflow-y: auto;
     outline: solid 3px black;
-    padding: 5px;
     font-family: 'Bahnschrift', sans-serif;
-    font-size: 18px;                                           
+    font-size: 18px;    
+    padding-left: 10px; 
+    padding-right: 10px;       
+    box-sizing: border-box;                               
+}
+
+#image-viewer .text-content{
+    background-color: rgb(77, 77, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio-folder .text-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#image-viewer .text-content img{
+    max-width: 604px;
+    max-height: 410px;
+}
+
+.tab-content .text-content p, .tab-content .text-content h1, .tab-content .text-content h2, .tab-content .text-content h3{
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.tab-content .text-content p{
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.tab-content .text-content .image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+}
+
+.tab-content .text-content .image-container p{
+    font-size: 14px;
+}
+
+.tab-content .text-content .image-container img{
+    max-width: 300px;
+    max-height: 300px;
+    cursor: pointer;
+}
+
+.tab-content .text-content h1{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-content .text-content h2{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#send-message-window{
+    width: 354px;
+}
+
+#send-message-window .tab-content{
+    margin: 10px 0px 0 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 451px;
+}
+
+/* #send-message-window .tab-content .tab-content-title{
+    margin-bottom: 10px;
+} */
+
+#send-message-window .tab-content .tab-content-title{
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#send-message-window .tab-content .text-content{
+    height: 550px;
+    width: 325px;
+}
+
+#send-message-window h1{
+    font-size: 18px;
+}
+
+#send-message-window .text-content p{
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 18px;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#send-message-window .text-content .available-user:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.unavailable-user-container{
+    display: grid;
+}
+
+.unavailable-information, .unavailable-user{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.unavailable-information{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border-radius: 5px;
+}
+
+.unavailable-information span{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.unavailable-user:hover~.unavailable-information{
+    display: block;
+    cursor: not-allowed;
+}
+
+.unavailable-information:hover{
+    display: block;
+    cursor: not-allowed;
+}
+
+.user-selected, .user-selected:hover{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 4px !important;
+}
+
+#send-message-window .action-button{
+    margin-top: 10px;
+}
+
+.friend-status{
+    font-style: italic;
+}
+
+.friend-online{
+    color: rgb(0, 200, 0);
+}
+
+.friend-offline{
+    color: rgb(231, 0, 0);
+}
+
+#private-message-window{
+    width: 800px;
+}
+
+#private-message-window .tab-content{
+    height: 451px;
+    height: calc(100% - 44px);
+    width: 634px;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+}
+
+#private-message-window .tab-content #chatroom-messaging{
+    width: 70%;
+    height: 100%;
+    /* background-color: rgba(255, 33, 33, 0.1); */
+    padding: 0 10px 0 0px;
+    box-sizing: border-box;
+}
+
+
+
+#private-message-window .tab-content #chatroom-messaging h2{
+    margin-bottom: 10px;
+}
+
+#private-message-window .tab-content #chatroom-messaging #chatroom-box{
+    height: 200px;
+    background-color: white;
+    outline: solid 3px black;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+#private-message-window .tab-content #chatroom-messaging #chatroom-box p{
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 18px;
+}
+
+#private-message-window .tab-content #chatroom-messaging form div{
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#private-message-window .tab-content #chatroom-messaging form div input, #private-message-window .tab-content #chatroom-messaging form div textarea{
+    width: 400px;
+    height: 20px;
+    font-family: 'Bahnschrift', sans-serif;
+    padding: 5px;
+    font-size: 18px;
+    resize: none;
+    box-sizing: border-box;
+    outline: 3px solid black;
+    border-radius: 3px;
+    border: none;
+}
+
+#private-message-window .tab-content #chatroom-messaging form div #textarea{
+    height: 100px;
+}
+
+#private-message-window .tab-content #chatroom-messaging form button{
+    position: relative;
+    right: -376px;
+    font-size: 14px;
+}
+
+
+
+#private-message-window .tab-content #chatroom-info{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgba(0, 200, 0, 0.1); */
+    padding: 0 0px 0 10px;
+}
+
+#private-message-window .tab-content #chatroom-info h2{
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+#private-message-window .tab-content #chatroom-info div{
+    background-color: white;
+    outline: 2px black solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#private-message-window .tab-content #chatroom-info div p{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .tab-content-shadow{
@@ -331,13 +671,13 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end; */
-    
-    margin-top: 6px;
+
     display: grid;
     grid-template-columns: 1fr 4fr;
 
     border-top: solid 2px rgb(0, 0, 0);
     padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .tab-footer .directory{
@@ -359,4 +699,71 @@ canvas{
     width: 100%;
     height: 100%;
     z-index: -10;
+}
+
+.splash-screen-container{
+    display: none;
+}
+
+.overlay-bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+.splash-screen{
+    z-index: 100000000000000000;
+}
+
+.splash-screen-content{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.splash-screen .text-content{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    outline: 5px black solid;
+}
+#credits-window .text-content{
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#credits-window .text-content div{
+    text-align: center;
+}
+
+#credits-window .text-content p{
+    margin: 10px;
+    font-size: 17px;
+}
+
+#credits-window .text-content .splash-screen-close, #credits-window .text-content #creator-link{
+	text-decoration: underline;
+    cursor: pointer;
+}
+
+.tab-active{
+    display: flex;
 }

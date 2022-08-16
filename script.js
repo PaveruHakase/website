@@ -1,3 +1,6 @@
+// code written by rayan mansur
+// reach me at www.rayanmansur.com
+
 var offset = [0, 0];
 var mousePosition;
 var mousePressed = false;
@@ -7,12 +10,19 @@ var zIndexValue = 100;
 const windows = document.querySelectorAll('.draggable');
 const fullWindows = document.querySelectorAll('.tab')
 const windowButtons = document.querySelectorAll('.tab-button');
-
+const availableUsers = document.querySelectorAll('.available-user');
+const paveruUsername = document.getElementById('paveru-hakase-user');
+const messagesButton = document.getElementById('open-messages');
+const credits = document.getElementById('credits');
+const outboundRayan = document.getElementById('creator-link');
+const overlays = document.querySelectorAll('.overlay-bg');
+const clickableImages = document.querySelectorAll('.viewable-image');
+const closeOverlayButton = document.querySelectorAll('.splash-screen-close');
 
 const icons = document.querySelectorAll('.icon');
 
 icons.forEach(icon => {
-    icon.addEventListener('dblclick', function openTab(event) {
+    icon.addEventListener('click', function openTab(event) {
         // console.log(icon.attributes.target.value)
         if (String(icon.attributes.target.value).includes("external")){
             if (String(icon.attributes.target.value).includes("youtube")){
@@ -42,6 +52,10 @@ icons.forEach(icon => {
                 window.open("https://facebook.com/PaveruHakaseCIA/", "_blank")
             }
 
+            else if (String(icon.attributes.target.value).includes("cv")){
+                window.open((window.location.href.toString() + "files/cv.pdf"), "_blank")
+            }
+
         }
         
         
@@ -51,7 +65,6 @@ icons.forEach(icon => {
         tabToOpen.classList.add('tab-active')
         tabToOpen.style.zIndex = zIndexValue
         zIndexValue += 1
-        console.log(zIndexValue)
         }
     });
 }, true);
@@ -77,6 +90,60 @@ windowButtons.forEach(button => {
     button.addEventListener('click', function hideWindow(event) {
         button.parentNode.parentNode.classList.remove('tab-active');
     }, true);
+}, true);
+
+credits.addEventListener('click', function openCredits(event) {
+    document.getElementById('credits-window').classList.add('tab-active');
+}, true);
+
+overlays.forEach(overlay => {
+    overlay.addEventListener('click', function closeSplashScreen(event) {
+        overlay.parentNode.classList.remove('tab-active');
+    }, true);
+}, true);
+
+outboundRayan.addEventListener('click', function openOutboundRayan(event) {
+    window.open("https://www.rayanmansur.com", "_blank")
+} , true);
+
+
+availableUsers.forEach(user => {
+    user.addEventListener('click', function hideWindow(event) {
+        if (document.querySelectorAll('.user-selected').length > 0) {
+            document.querySelectorAll('.user-selected').forEach(el => {
+              el.classList.remove('user-selected');
+            })
+        }
+        user.classList.add('user-selected');
+    }, true);
+}, true);
+
+closeOverlayButton.forEach(button => {
+    button.addEventListener('click', function closeSplashScreenButton(event) {
+        button.parentNode.parentNode.parentNode.parentNode.parentNode.classList.remove('tab-active')
+    }, true);
+}, true);
+
+clickableImages.forEach(image => {
+    image.addEventListener('click', function openImage(event) {
+        document.getElementById('image-viewer').classList.add('tab-active');
+        document.getElementById('image-viewer-image').src = image.src;
+        document.getElementById('image-viewer').style.zIndex = zIndexValue;
+        zIndexValue = zIndexValue + 1;
+    }, true);
+} , true);
+
+
+
+messagesButton.addEventListener('click', function openMessages(event) {
+    if (paveruUsername.classList.contains('user-selected')) {
+        messagesWindow = document.getElementById('private-message-window')
+        messagesWindow.classList.add('tab-active')
+        messagesWindow.style.zIndex = zIndexValue
+    }
+    else{
+        alert('Please select a user to send a message to')
+    }
 }, true);
 
 
@@ -114,11 +181,18 @@ document.addEventListener('mousemove', function(event) {
             y : event.clientY
 
         };
-        console.log(zIndexValue);
         element = document.getElementById(idName);
 
         element.parentNode.style.left = (mousePosition.x + offset[0]) + 'px';
         element.parentNode.style.top  = (mousePosition.y + offset[1]) + 'px';
+
+        if ((mousePosition.y + offset[1]) < 0){
+            element.parentNode.style.top  = '0px';
+        }
+
+        if ((mousePosition.x + offset[0]) < 0){
+            element.parentNode.style.left = '0px';
+        }
     }
 }, true);
 
@@ -229,7 +303,7 @@ function updateClock() {
         if (day < 10) {
             day = '0' + day
         }
-        month = now.getMonth()
+        month = now.getMonth() + 1
         if (month < 10) {
             month = '0' + month
         }

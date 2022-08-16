@@ -11,27 +11,21 @@ reach me at www.rayanmansur.com  */
     src: url('fonts/vipnagorgialla rg.otf');
 }
 
-/* div[title]:hover:after {
-    content: attr(title);
-    position: absolute;
-    background-color: black;
-} */
-
 h1, h2, p{
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
 h1{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h2{
-    font-size: 15px;
+    font-size: 0.938rem;
 }
 
 p{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: Conthrax;
 }
 
@@ -39,12 +33,12 @@ button{
     cursor: pointer;
     color: rgb(0, 0, 0);
     background-color: white;
-    padding: 7px;
+    padding: 0.438rem;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 3px;
-    border: solid 2px black;
+    font-size: 1rem;
+    border-radius: 0.188rem;
+    border: solid 0.125rem black;
     font-family: Conthrax;
 }
 
@@ -54,24 +48,22 @@ body{
     font-family: 'Roboto Mono', monospace;
     font-family: Conthrax;
 
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                        supported by Chrome, Edge, Opera and Firefox */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
 
     height: 100%;
     background-image: url("files/EedklxAU4AIXEd-.jpeg");
     background-size: cover;
 }
 
-/* width */
 ::-webkit-scrollbar {
     position: absolute;
     z-index: 1000;
-    width: 10px;
+    width: 0.625rem;
 }
 
 
@@ -81,7 +73,7 @@ body{
    
 ::-webkit-scrollbar-thumb {
     background-image: linear-gradient(rgb(80, 80, 80), rgb(60, 60, 60));
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -89,18 +81,16 @@ body{
 }
 
 
-
-
+    
 
 
 #taskbar{
     position: sticky;
     width: 100%;
     height: auto;
-    /* border-bottom: 5px solid rgba(0, 0, 0, 0.325); */
     z-index: 40;
     background-image: linear-gradient( #b3bdd3, #dae1ea, #bfc8da);
-    border-bottom: 2px solid #00218d;
+    border-bottom: 0.125rem solid #00218d;
 }
 
 
@@ -112,27 +102,25 @@ body{
     background-color: #767676;
     display: flex;
     z-index: 0;
-    padding-left: 11px;
+    padding-left: 0.688rem;
     clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
     color: rgba(0, 0, 0, 0);
 }
 
 #taskbar #right-taskbar-shadow div{
-    margin: 5px 10px 5px 10px;
+    margin: 0.313rem 0.625rem 0.313rem 0.625rem;
 }
 
 #main-taskbar{
     position: sticky;
     width: 100%;
     height: auto;
-    /* border-bottom: 5px solid rgba(0, 0, 0, 0.325); */
     color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 40;
-
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.313rem 0.313rem rgba(0, 0, 0, 0.2);
 }
 
 #credits:hover{
@@ -147,20 +135,15 @@ body{
   to { -webkit-mask-position: -50%; }
 }
 
-
-
 #main-taskbar #left-taskbar{
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    
-    
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
     z-index: 10;
     background-image: linear-gradient(#fff, #95b7c9);
-    padding-right: 12px;
+    padding-right: 0.75rem;
 }
 
 
@@ -175,7 +158,7 @@ body{
     align-items: center;
     color: black;
     z-index: 0;
-    padding-right: 13px;
+    padding-right: 0.813rem;
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
     color: rgba(0, 0, 0, 0);
 }
@@ -186,32 +169,18 @@ body{
 
 #main-taskbar #left-taskbar div, #taskbar #left-taskbar-shadow div{
     height: 100%;
-    margin: 5px 10px 5px 10px;
+    margin: 0.313rem 0.625rem 0.313rem 0.625rem;
 }
 
 #main-taskbar #left-taskbar div{
     cursor: pointer;
-    /* padding: 4px;
-    margin-top: 1px;
-    margin-bottom: 1px; */
 }
 
 
 #main-taskbar #left-taskbar div img, #taskbar #left-taskbar-shadow div img{
-    height: 10px;
-    width: 24px;
+    height: 0.625rem;
+    width: 1.5rem;
 }
-/* 
-#main-taskbar #left-taskbar #logo{
-    background-image: linear-gradient(#fff, #95b7c9);
-}
-
-#main-taskbar #left-taskbar #logo-shadow{
-    background-color: #767676;
-    position: absolute;
-    padding-right: 11px;
-    z-index: 0;
-} */
 
 #main-taskbar #right-taskbar{
     height: auto;
@@ -219,58 +188,50 @@ body{
     flex-direction: row;
     align-items: center;
     background-image: linear-gradient(#fff, #95b7c9);
-    padding-left: 10px;
+    padding-left: 0.625rem;
     clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
     
 }
 
-/* #main-taskbar #right-taskbar #date, #main-taskbar #right-taskbar #time{
-    transform: skewX(20deg);
-} */
-
 #main-taskbar #right-taskbar div{
-    margin: 5px 10px 5px 10px;
+    margin: 0.313rem 0.625rem 0.313rem 0.625rem;
 }
 
 #icons-container{
-    width: 300px;
+    width: 18.75rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 0.313rem;
+    margin-left: 0.625rem;
 }
 
 .icon{
-    margin: 10px;
-    width: 100px;
-    height: 90px;
-    /* background-color: #9F9F9F; */
+    margin: 0.625rem;
+    width: 6.25rem;
+    height: 5.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: black;
-    /* word-break: break-word; */
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-    
 }
 
-
 .icon img{
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
 }
 
 
 .icon span{
     font-family: 'Bahnschrift', sans-serif;
-    margin-top: 5px;
-    font-size: 18px;
+    margin-top: 0.313rem;
+    font-size: 1.125rem;
     display: inline-block;
     word-wrap: break-word;
     text-align: center;
@@ -284,72 +245,62 @@ body{
 .icon:hover{
     background-color: #e2e2e2;
     background-color: rgba(0, 0, 0, 0.325);
-    outline: solid 3px #d3d3d3;
-    /* box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; */
+    outline: solid 0.188rem #d3d3d3;
     color: white;
 }
 
 .tab{
-    width: 654px;
-    height: 500px;
+    width: 40.875rem;
+    height: 31.25rem;
     background-image: linear-gradient(#eeedee, #9ca0b8);
-    border: 3px solid  rgba(120, 120, 120);
-    border: 3px solid  rgba(0, 0, 0, 0.325);
-    border-radius: 7px;
+    border: 0.188rem solid  rgba(120, 120, 120);
+    border: 0.188rem solid  rgba(0, 0, 0, 0.325);
+    border-radius: 0.438rem;
     align-items: center;
-
     position: absolute;
-    /* top: 15%;
-    left: 20%; */
     z-index: 55;
-    /* display: none; */
     display: flex;
     flex-direction: column;
-
     display: none;
-
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
-
+    box-shadow: 0 0 0.188rem 0.188rem rgba(0, 0, 0, 0.2);
 }
 
 .tab-taskbar{
-    width: calc(100% + 1.1px);
+    width: calc(100% + 0.06875em);
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    top: -0.5px;
-    left: -0.5px;
+    top: -0.03125rem;
+    left: -0.03125rem;
     color: black;
-    font-size: 13px;
+    font-size: 0.813rem;
     white-space: nowrap;
-    border-bottom: solid 2px rgb(0, 0, 0);
+    border-bottom: solid 0.125rem rgb(0, 0, 0);
     font-family: Vipnagorgialla, sans-serif;
     font-weight: 600;
 }
 
 .tab-taskbar div{
-    margin: 3px 10px 3px 10px;
+    margin: 0.188rem 0.625rem 0.188rem 0.625rem;
 }
 
 .tab-bar{
-    height: 7px;
+    height: 0.438rem;
     width: 100%;
     background-image: linear-gradient(#E5E5E5, #9F9F9F);
-    border-radius: 5000px;
+    border-radius: 312.5rem;
 }
 
 .tab-button{
-    height: 10px;
-    width: 20px;
+    height: 0.625rem;
+    width: 1.25rem;
     background-color: #d5d5d5;
-    border-radius: 3px;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
-    outline: solid 1px black;
+    border-radius: 0.188rem;
+    box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.2);
+    outline: solid 0.063rem black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,38 +308,31 @@ body{
 
 .tab-button span{
     position: relative;
-    top: -0.5px;
+    top: -0.03125em;
 }
 
 .tab-button:hover{
     background-color: rgb(159, 159, 159);
 }
 
-/* .tab-title{
-    
-} */
-
-
-
-
 .tab-content{
-    height: 430px;
-    margin: 10px 0px 10px 0px;
+    height: 26.875rem;
+    margin: 0.625rem 0rem 0.625rem 0rem;
 }
 
 .tab-content .text-content{
     background-color: white;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     display: block;
     overflow: auto;
     height: 100%;
-    width: 624px;
+    width: 39rem;
     overflow-y: auto;
-    outline: solid 3px black;
+    outline: solid 0.188rem black;
     font-family: 'Bahnschrift', sans-serif;
-    font-size: 18px;    
-    padding-left: 10px; 
-    padding-right: 10px;       
+    font-size: 1.125rem;    
+    padding-left: 0.625rem; 
+    padding-right: 0.625rem;       
     box-sizing: border-box;                               
 }
 
@@ -407,8 +351,8 @@ body{
 }
 
 #image-viewer .text-content img{
-    max-width: 604px;
-    max-height: 410px;
+    max-width: 37.75rem;
+    max-height: 25.625rem;
 }
 
 .tab-content .text-content p, .tab-content .text-content h1, .tab-content .text-content h2, .tab-content .text-content h3{
@@ -416,85 +360,80 @@ body{
 }
 
 .tab-content .text-content p{
-    font-size: 18px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    font-size: 1.125rem;
+    margin-top: 0.438rem;
+    margin-bottom: 0.438rem;
 }
 
 .tab-content .text-content .image-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
+    margin-top: 0.438rem;
+    margin-bottom: 0.438rem;
 }
 
 .tab-content .text-content .image-container p{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .tab-content .text-content .image-container img{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 18.75rem;
+    max-height: 18.75rem;
     cursor: pointer;
 }
 
 .tab-content .text-content h1{
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 1.563rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 
 .tab-content .text-content h2{
-    font-size: 22px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 1.375rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 
 #send-message-window{
-    width: 354px;
+    width: 22.125rem;
 }
 
 #send-message-window .tab-content{
-    margin: 10px 0px 0 0px;
+    margin: 0.625rem 0rem 0 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 451px;
+    height: 28.188rem;
 }
-
-/* #send-message-window .tab-content .tab-content-title{
-    margin-bottom: 10px;
-} */
 
 #send-message-window .tab-content .tab-content-title{
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 #send-message-window .tab-content .text-content{
-    height: 550px;
-    width: 325px;
+    height: 34.375rem;
+    width: 20.313rem;
 }
 
 #send-message-window h1{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 #send-message-window .text-content p{
     font-family: 'Bahnschrift', sans-serif;
-    font-size: 18px;
-    padding: 4px;
+    font-size: 1.125rem;
+    padding: 0.25rem;
     box-sizing: border-box;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 #send-message-window .text-content .available-user:hover{
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
 }
 
@@ -515,14 +454,14 @@ body{
     align-items: center;
     justify-content: center;
     display: none;
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 .unavailable-information span{
     background-color: rgb(255, 255, 255);
-    padding: 3px;
+    padding: 0.188rem;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 0.188rem;
 }
 
 .unavailable-user:hover~.unavailable-information{
@@ -537,11 +476,11 @@ body{
 
 .user-selected, .user-selected:hover{
     background-color: rgba(0, 0, 0, 0.4) !important;
-    border-radius: 4px !important;
+    border-radius: 0.25rem !important;
 }
 
 #send-message-window .action-button{
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .friend-status{
@@ -557,139 +496,126 @@ body{
 }
 
 #private-message-window{
-    width: 800px;
+    width: 50rem;
 }
 
 #private-message-window .tab-content{
-    height: 451px;
-    height: calc(100% - 44px);
-    width: 634px;
-    width: calc(100% - 20px);
+    height: 28.188rem;
+    height: calc(100% - 2.75rem);
+    width: 39.625rem;
+    width: calc(100% - 1.25rem);
     display: flex;
     flex-direction: row;
-    /* background-color: red; */
 }
 
 #private-message-window .tab-content #chatroom-messaging{
     width: 70%;
     height: 100%;
-    /* background-color: rgba(255, 33, 33, 0.1); */
-    padding: 0 10px 0 0px;
+    padding: 0 0.625rem 0 0rem;
     box-sizing: border-box;
 }
 
-
-
 #private-message-window .tab-content #chatroom-messaging h2{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 #private-message-window .tab-content #chatroom-messaging #chatroom-box{
-    height: 200px;
+    height: 12.5rem;
     background-color: white;
-    outline: solid 3px black;
-    border-radius: 5px;
-    padding: 5px;
+    outline: solid 0.188rem black;
+    border-radius: 0.313rem;
+    padding: 0.313rem;
     
 }
 
 #private-message-window .tab-content #chatroom-messaging #chatroom-box p{
     font-family: 'Bahnschrift', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 #private-message-window .tab-content #chatroom-messaging form div{
-    margin: 10px 0px 10px 0px;
+    margin: 0.625rem 0rem 0.625rem 0rem;
     display: flex;
     justify-content: space-between;
 }
 
 #private-message-window .tab-content #chatroom-messaging form div input, #private-message-window .tab-content #chatroom-messaging form div textarea{
-    width: 400px;
-    height: 20px;
+    width: 25rem;
+    height: 1.25rem;
     font-family: 'Bahnschrift', sans-serif;
-    padding: 5px;
-    font-size: 18px;
+    padding: 0.313rem;
+    font-size: 1.125rem;
     resize: none;
     box-sizing: border-box;
-    outline: 3px solid black;
-    border-radius: 3px;
+    outline: 0.188rem solid black;
+    border-radius: 0.188rem;
     border: none;
 }
 
 #private-message-window .tab-content #chatroom-messaging form div #textarea{
-    height: 100px;
+    height: 6.25rem;
 }
 
 #private-message-window .tab-content #chatroom-messaging form button{
     position: relative;
-    right: -376px;
-    font-size: 14px;
+    right: -23.5rem;
+    font-size: 0.875rem;
 }
-
-
 
 #private-message-window .tab-content #chatroom-info{
     width: 30%;
     height: 100%;
-    /* background-color: rgba(0, 200, 0, 0.1); */
-    padding: 0 0px 0 10px;
+    padding: 0 0rem 0 0.625rem;
 }
 
 #private-message-window .tab-content #chatroom-info h2{
-    margin-bottom: 10px;
-    margin-top: 1px;
+    margin-bottom: 0.625rem;
+    margin-top: 0.063rem;
 }
 
 #private-message-window .tab-content #chatroom-info div{
     background-color: white;
-    outline: 2px black solid;
-    border-radius: 5px;
-    padding: 5px;
+    outline: 0.125rem black solid;
+    border-radius: 0.313rem;
+    padding: 0.313rem;
 }
 
 #private-message-window .tab-content #chatroom-info div p{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
 }
 
 .tab-content-shadow{
     position: absolute;
     background-color: black;
-    height: 460.6px;
-    min-width: 490px;
+    height: 28.7875rem;
+    min-width: 30.625rem;
     max-width: 100%;
     z-index: -1;
-    border-radius: 5px;
-    margin: 2px;
+    border-radius: 0.313rem;
+    margin: 0.125rem;
 }
 
 .tab-footer{
     width: 100%;
     height: auto;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end; */
-
     display: grid;
     grid-template-columns: 1fr 4fr;
-
-    border-top: solid 2px rgb(0, 0, 0);
-    padding-top: 2px;
-    padding-bottom: 2px;
+    border-top: solid 0.125rem rgb(0, 0, 0);
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
 }
 
 .tab-footer .directory{
     grid-column-start: 2;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     background-image: linear-gradient(#4a4947, #000);
     color: white;
-    padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 5px;
-    font-size: 12px;
+    padding-left: 0.625rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    border-radius: 0.313rem;
+    font-size: 0.75rem;
 }
 
 canvas{
@@ -728,16 +654,16 @@ canvas{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border-radius: 15px;
+    border-radius: 0.938rem;
 }
 
 .splash-screen .text-content{
-    width: 500px;
-    height: 200px;
+    width: 31.25rem;
+    height: 12.5rem;
     background-color: white;
-    border-radius: 10px;
-    margin: 10px;
-    outline: 5px black solid;
+    border-radius: 0.625rem;
+    margin: 0.625rem;
+    outline: 0.313rem black solid;
 }
 #credits-window .text-content{
 	display: flex;
@@ -745,8 +671,8 @@ canvas{
 	justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 2.5rem;
+    padding-bottom: 0.625rem;
     box-sizing: border-box;
 }
 
@@ -755,8 +681,8 @@ canvas{
 }
 
 #credits-window .text-content p{
-    margin: 10px;
-    font-size: 17px;
+    margin: 0.625rem;
+    font-size: 1.063rem;
 }
 
 #credits-window .text-content .splash-screen-close, #credits-window .text-content #creator-link{
@@ -766,4 +692,55 @@ canvas{
 
 .tab-active{
     display: flex;
+}
+
+
+#small-screen{
+    display: none;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+@media screen and (max-width: 37.5rem) {
+    #desktop-screen{
+        display: none;
+    }
+
+    body{
+        background-image: none;
+        background-color: #000;
+        color: white;
+    }
+    
+    #small-screen{
+        padding-top: 3.125rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        font-family: 'Bahnschrift', sans-serif;
+        text-align: center;
+    }
+
+    #small-screen form div{
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #small-screen form button{
+        font-family: 'Bahnschrift';
+    }
+
+    #small-screen h1{
+        font-size: 1.875rem;
+    }
+
+    #small-screen h2{
+        font-size: 1.563rem;
+    }
+
+    #small-screen p{
+        font-size: 1.25rem;
+    }
 }

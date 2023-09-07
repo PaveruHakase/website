@@ -45,7 +45,7 @@ icons.forEach(icon => {
             }
 
             else if (String(icon.attributes.target.value).includes("instagram")){
-                window.open("https://instagram.com/paveruhakase", "_blank")
+                window.open("https://instagram.com/chagat.ai", "_blank")
             }
 
             else if (String(icon.attributes.target.value).includes("facebook")){

@@ -2,13 +2,18 @@
 reach me at www.rayanmansur.com  */
 
 @font-face {
-    font-family: Conthrax;
-    src: url('fonts/conthrax-sb.ttf');
+    font-family: Cute Font;
+    src: url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
 }
 
 @font-face {
-    font-family: Vipnagorgialla;
-    src: url('fonts/vipnagorgialla rg.otf');
+    font-family: 'MS-Mincho';
+    src:url('MS-Mincho.ttf.woff') format('woff'),
+        url('MS-Mincho.ttf.svg#MS-Mincho') format('svg'),
+        url('MS-Mincho.ttf.eot'),
+        url('MS-Mincho.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1, h2, p{
@@ -26,7 +31,7 @@ h2{
 
 p{
     font-size: 0.875rem;
-    font-family: Conthrax;
+    font-family: Cute Font;
 }
 
 button{
@@ -39,14 +44,14 @@ button{
     font-size: 1rem;
     border-radius: 0.188rem;
     border: solid 0.125rem black;
-    font-family: Conthrax;
+    font-family: 'Cute Font', cursive;
 }
 
 body{
     margin: 0;
     overflow: hidden;
-    font-family: 'Roboto Mono', monospace;
-    font-family: Conthrax;
+    font-family: 'Cutive Mono', monospace;
+    font-family: Cute Font;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -239,7 +244,7 @@ body{
 
 
 .icon span{
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Jura', sans-serif;
     margin-top: 0.313rem;
     font-size: 1.125rem;
     display: inline-block;
@@ -294,7 +299,7 @@ body{
     font-size: 0.813rem;
     white-space: nowrap;
     border-bottom: solid 0.125rem rgb(0, 0, 0);
-    font-family: Vipnagorgialla, sans-serif;
+    font-family: 'MS-Mincho';
     font-weight: 600;
 }
 
@@ -344,7 +349,7 @@ body{
     width: 39rem;
     overflow-y: auto;
     outline: solid 0.188rem black;
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Jura', sans-serif;
     font-size: 1.125rem;    
     padding-left: 0.625rem; 
     padding-right: 0.625rem;       
@@ -373,7 +378,7 @@ body{
 }
 
 .tab-content .text-content p, .tab-content .text-content h1, .tab-content .text-content h2, .tab-content .text-content h3{
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Jura', sans-serif;
 }
 
 .tab-content .text-content p{
@@ -441,7 +446,7 @@ body{
 }
 
 #send-message-window .text-content p{
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Jura', sans-serif;
     font-size: 1.125rem;
     padding: 0.25rem;
     box-sizing: border-box;
@@ -555,7 +560,7 @@ body{
 }
 
 #private-message-window .tab-content #chatroom-messaging #chatroom-box p{
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Jura', sans-serif;
     font-size: 1.125rem;
 }
 
@@ -568,7 +573,7 @@ body{
 #private-message-window .tab-content #chatroom-messaging form div input, #private-message-window .tab-content #chatroom-messaging form div textarea{
     width: 25rem;
     height: 1.25rem;
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Jura', sans-serif;
     padding: 0.313rem;
     font-size: 1.125rem;
     resize: none;
@@ -730,7 +735,7 @@ canvas{
 
 #small-screen{
     display: none;
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Jura', sans-serif;
 }
 
 @media screen and (max-width: 37.5rem) {
@@ -750,7 +755,7 @@ canvas{
         flex-direction: column;
         align-items: center;
         background-image: none;
-        font-family: 'Bahnschrift', sans-serif;
+        font-family: 'Jura', sans-serif;
         text-align: center;
     }
 
@@ -762,7 +767,7 @@ canvas{
     }
     
     #small-screen form button{
-        font-family: 'Bahnschrift';
+        font-family: 'Jura';
     }
 
     #small-screen h1{

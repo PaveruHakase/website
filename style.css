@@ -31,7 +31,7 @@ h2{
 
 p{
     font-size: 0.875rem;
-    font-family: Cute Font;
+    font-family: 'Cute Font', cursive;
 }
 
 button{
@@ -44,7 +44,7 @@ button{
     font-size: 1rem;
     border-radius: 0.188rem;
     border: solid 0.125rem black;
-    font-family: 'Cute Font', cursive;
+    font-family: 'MS-Mincho';
 }
 
 body{
@@ -299,7 +299,7 @@ body{
     font-size: 0.813rem;
     white-space: nowrap;
     border-bottom: solid 0.125rem rgb(0, 0, 0);
-    font-family: 'MS-Mincho';
+    font-family: Cute Font;
     font-weight: 600;
 }
 

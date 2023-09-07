@@ -3,7 +3,7 @@ reach me at www.rayanmansur.com  */
 
 @font-face {
     font-family: Cute Font;
-    src: url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap') format('woff2');
 }
 
 @font-face {
@@ -65,6 +65,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 body{
     margin: 0;
